@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+<h1>Star Wars</h1>
+<button type="button" class="btn btn-primary" id="previous-button">Previous</button>
+<button type="button" class="btn btn-secondary" id="next-button">Next</button>
+<table class="table" id="data-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Diameter</th>
+            <th>Climate</th>
+            <th>Terrain</th>
+            <th>Surface Water Percentage</th>
+            <th>Population</th>
+            <th>Residents</th>
+            <th>Vote</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+
+{% endblock %}
+{% include 'modal.html' %}
